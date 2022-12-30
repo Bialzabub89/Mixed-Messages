@@ -1,0 +1,12 @@
+Coding Languages
+    - File STructure
+        - Main
+            - HTML - 1 Page
+            - CSS - Linked 
+            - Javascript
+    
+    - Features
+        - Good [morning, afternoon, evening] - outlined automatically by System Time.
+        - User Name Input
+        - Multiple Buttons [Animals, Games, Cars, Programming] 5-6 Messages Per Category all randomized
+        - 5th Button For Random Message from random Category
