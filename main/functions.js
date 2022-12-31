@@ -61,4 +61,3 @@ const prog = [
 
     "There are 3 very different types of Hackers, one being malicious, the other benevolent, and the last somewhere in between the two! Black hats are the first type and specialize in breaking into computer networks with malicious intent. Often, they will attempt to steal passwords, credit cards, and other types of sensitive information, blackmailing internet users for money in the process. On the flip side, White hats primarily choose to use their skills for good, regularly being contracted by businesses to look for security holes in their online infrastructures. Grey hats are a mixture of both, helping people yet also commonly exploiting their web-based vulnerabilities when not paid for their services."
 ]
-
