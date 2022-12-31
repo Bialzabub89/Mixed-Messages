@@ -1,7 +1,8 @@
-// JavaScript Document
-
-
 // Animal Messages
+
+
+let message = document.getElementById('message')
+
 const animal = [
     "Only half a Dolphin's brain sleeps at a time! Dolphins are mammals so although they live in the sea, and can hold their breath for an exceptionally long time, they do have to come up for air from time to time. It is for this reason that a Dolphin's brain will never fully disengage, as it still needs to retain enough motor control to occasionally go up to the surface and breath. Dolphins also sleep with one eye open at all times.",
 
@@ -44,7 +45,7 @@ const cars = [
 const prog = [
     "There are around 700 seperate programming languages! Amongst this list, some of the most popular languages are Javascript, Swift, Scala, Python, PHP, Go, Rust, Ruby, and C#, with millions of users utilizing them in both their careers and personal projects. However, new programming languages are constantly being created.",
 
-    "Recen studies show that around 70% of coding jobs have nothing to do with technology at all! That's right, you or your child could learn to program and apply this knowledge to topics completely separate from technology - like nature studies, geography research, and film and design.",
+    "Recent studies show that around 70% of coding jobs have nothing to do with technology at all! That's right, you or your child could learn to program and apply this knowledge to topics completely separate from technology - like nature studies, geography research, and film and design.",
 
     "The first programming language was called FORTRAN! It was developed by a team lead by Mr. John Backus, an American computer scientist. First appearing in 1964, FORTRAN is still in use today, predominantly helping computer scientists to conduct complex tests in areas such as numerical weather prediction, geophysics, crystallography, and computational chemistry.",
 
