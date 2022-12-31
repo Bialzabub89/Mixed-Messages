@@ -1,5 +1,3 @@
-"use strict";
-
 // Message ID target
 let message = document.getElementById('message')
 
