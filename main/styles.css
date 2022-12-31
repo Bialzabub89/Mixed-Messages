@@ -1,4 +1,49 @@
 @charset "UTF-8";
-/* CSS Document */
-/* could use a program that automatically converts browser stuff etc to the desired effect and for older versions. */
-/* try use seperate stylesheets for seperate sheets */
+*{
+    margin: 0;
+    padding: 0;
+    padding: 30px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+section{
+    width: 100%;
+    border: solid white 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+section:first-of-type{
+    min-height: 200px;
+}
+section h4{
+    padding: 0 1em;
+}
+button{
+    font-size: 1em;
+    padding: 1em;
+    width: 10%;
+    background: orange;
+    box-shadow: 2px 2px 0px rgb(255, 190, 68);
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 0 0 0;
+    transform: translate(5px, 5px);
+    transition: all;
+}
