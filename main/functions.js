@@ -1,5 +1,3 @@
-"use strict";
-
 function grab_id(arg){
     return document.getElementById(arg)
 }
@@ -75,8 +73,8 @@ const generateRandomMessage = (array) =>{
     let ranNum;
     ranNum = Math.floor(Math.random() * array.length)
     if(array === random){
-        let i = Math.floor(Math.random() * 5)
-        // Maybe add a more accurate randomiser that 5 above in the event we change the ammount of rendom messages per array
+        let i = Math.floor(Math.random() * array.length)
+        // Maybe add a more accurate randomiser that 5 above in the event we change the ammount of rendom messages per array - Changed to array.length to accomodate growth in arrays down the line
         return array[ranNum][i]
     }else{
         return array[ranNum]
