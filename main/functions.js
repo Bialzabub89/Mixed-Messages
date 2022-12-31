@@ -1,4 +1,4 @@
-// Animal Messages
+"use strict";
 
 // Message ID target
 let message = document.getElementById('message')
@@ -11,6 +11,7 @@ const carsButton = document.getElementById('cars')
 const programmingButton = document.getElementById('programming')
 const randomButton = document.getElementById('random')
 
+// Animal Messages
 const animal = [
     "Only half a Dolphin's brain sleeps at a time! Dolphins are mammals so although they live in the sea, and can hold their breath for an exceptionally long time, they do have to come up for air from time to time. It is for this reason that a Dolphin's brain will never fully disengage, as it still needs to retain enough motor control to occasionally go up to the surface and breath. Dolphins also sleep with one eye open at all times.",
 
@@ -47,7 +48,7 @@ const cars = [
     "In 2013, white was the world's most favorite car color. According to an Australian study, white vehicles are 10% less likely to be involved in an accident. Moreover, cars that have mainstream colors are prone to theft more than those that have less popular colors.",
 
     "Almost three-quarters of the Rolls Royce cars ever produced are still on the road today."
-]
+];
 
 // Programming Messages
 const prog = [
@@ -60,4 +61,38 @@ const prog = [
     "NASA still uses programs from the 70s in their spacecraft! According to experts, NASA chooses not to write new code or design new programs as it would be extremely expensive to carry this out. Alongside this, implementing new programs requires a lot of testing to minimize the chance of a catastrophic failure happening. Instead, they choose to stick to older tech that has proven to be reliable, safe, and non-costly",
 
     "There are 3 very different types of Hackers, one being malicious, the other benevolent, and the last somewhere in between the two! Black hats are the first type and specialize in breaking into computer networks with malicious intent. Often, they will attempt to steal passwords, credit cards, and other types of sensitive information, blackmailing internet users for money in the process. On the flip side, White hats primarily choose to use their skills for good, regularly being contracted by businesses to look for security holes in their online infrastructures. Grey hats are a mixture of both, helping people yet also commonly exploiting their web-based vulnerabilities when not paid for their services."
-]
+];
+
+// Array of the Above Arrays
+const random = [animal, games, cars, prog];
+
+// Fuction to run when event listener is triggered
+const generateRandomMessage = (array) =>{
+    return array[Math.floor(Math.random() * array.length)]
+}
+
+
+
+
+
+// Event Listeners for click on buttons
+animalsButton.addEventListener("click", function(){
+    message.textContent = generateRandomMessage(animal);
+});
+
+gamesButton.addEventListener('click', function(){
+    message.textContent = generateRandomMessage(games);
+});
+
+carsButton.addEventListener('click', function(){
+    message.textContent = generateRandomMessage(cars);
+});
+
+programmingButton.addEventListener('click', function(){
+    message.textContent = generateRandomMessage(prog);
+});
+
+randomButton.addEventListener('click', function(){
+    message.textContent = generateRandomMessage(random);
+});
+
