@@ -1,7 +1,15 @@
 // Animal Messages
 
-
+// Message ID target
 let message = document.getElementById('message')
+
+
+// Assigning Variables to buttons ID within index.html
+const animalsButton = document.getElementById('animals')
+const gamesButton = document.getElementById('games')
+const carsButton = document.getElementById('cars')
+const programmingButton = document.getElementById('programming')
+const randomButton = document.getElementById('random')
 
 const animal = [
     "Only half a Dolphin's brain sleeps at a time! Dolphins are mammals so although they live in the sea, and can hold their breath for an exceptionally long time, they do have to come up for air from time to time. It is for this reason that a Dolphin's brain will never fully disengage, as it still needs to retain enough motor control to occasionally go up to the surface and breath. Dolphins also sleep with one eye open at all times.",
@@ -54,9 +62,3 @@ const prog = [
     "There are 3 very different types of Hackers, one being malicious, the other benevolent, and the last somewhere in between the two! Black hats are the first type and specialize in breaking into computer networks with malicious intent. Often, they will attempt to steal passwords, credit cards, and other types of sensitive information, blackmailing internet users for money in the process. On the flip side, White hats primarily choose to use their skills for good, regularly being contracted by businesses to look for security holes in their online infrastructures. Grey hats are a mixture of both, helping people yet also commonly exploiting their web-based vulnerabilities when not paid for their services."
 ]
 
-// Assigning Variables to buttons ID within index.html
-const animalsButton = document.getElementById('animals')
-const gamesButton = document.getElementById('games')
-const carsButton = document.getElementById('cars')
-const programmingButton = document.getElementById('programming')
-const randomButton = document.getElementById('random')
