@@ -12,24 +12,32 @@
 		<h1>Mixed Messages Project</h1>
 	</header>
 	<main>
+		
 		<section>
 			<!-- message will display greetings depending on time of day and inoput of persons name -->
 			<h4 id="message">Default Message</h4>
 			<!-- This message will regenerate every time a button is clicked -->
 		</section>
-		<section>
+		<section id="info">
+			<p>Click one of the buttons below to generate a random fact about that category.</p>
+		</section>
+		<section id="selector">
 			<!-- each button will generate a random fact of that category -->
-			<button id="animals">Animals</button>
-			<button id="games">Games</button>
-			<button id="cars">Cars</button>
-			<button id="programming">Programming</button>
-			<button id="random">Random</button>
+			<!-- Buttons given new class and icons added. -->
+			<button type="button" class="rounded-button" id="animals"><ion-icon name="paw-outline" size="large"></ion-icon>Animals</button>
+			<button type="button" class="rounded-button" id="games"><ion-icon name="game-controller-outline" size="large"></ion-icon>Games</button>
+			<button type="button" class="rounded-button" id="cars"><ion-icon name="car-sport-outline" size="large"></ion-icon>Cars</button>
+			<button type="button" class="rounded-button" id="programming"><ion-icon name="laptop-outline" size="large"></ion-icon>Coding</button>
+			<button type="button" class="rounded-button" id="random"><ion-icon name="shuffle-outline" size="large" ></ion-icon>Random</button>
 		</section>
 		<!-- input new section here with a header for the section and a randomiser button. we can work on the inputs when were back together i think it comes up next on your course. making websites accessible module i think it is.-->
 	</main>
 	<footer>
 
 	</footer>
+	<!-- Adding Icons From ionicons -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <script src="functions.js"></script>
 <script src="holidays.js"></script>
