@@ -73,9 +73,9 @@ const generateRandomMessage = (array) =>{
     let ranNum;
     ranNum = Math.floor(Math.random() * array.length)
     if(array === random){
-        let i = Math.floor(Math.random() * array.length)
-        // Maybe add a more accurate randomiser that 5 above in the event we change the ammount of rendom messages per array - Changed to array.length to accomodate growth in arrays down the line
-        return array[ranNum][i]
+        // let i = Math.floor(Math.random() * array.length) This will only randomise the length of random array which is 1 less than the categories. Please see below solution.
+        let ranCatNum = Math.floor(Math.random() * array[ranNum].length)
+        return array[ranNum][ranCatNum]
     }else{
         return array[ranNum]
     }
