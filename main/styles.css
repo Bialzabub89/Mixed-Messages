@@ -81,9 +81,6 @@ button:active{
     transform: translate(5px, 5px);
     transition: all;
 }
-.rounded-button{
-    
-}
 .rounded-button:hover {
     background: #00866c;
 }
