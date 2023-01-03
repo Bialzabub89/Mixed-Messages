@@ -62,11 +62,12 @@ section h4{
 
 /* Changes Made to add icons and colour changes on hover, color changed also */
 button{
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     background-color: #00872d7e;
     color: rgb(241, 241, 241);
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -75,6 +76,9 @@ button{
     text-decoration: none;
     transition: background 0.2s;
     box-shadow: 2px 2px 0px
+}
+ion-icon{
+    font-size: 64px;
 }
 button:active{
     box-shadow: 0 0 0;
