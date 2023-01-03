@@ -15,58 +15,59 @@
 		
 		<section>
 			<!-- message will display greetings depending on time of day and inoput of persons name -->
-			<h4 id="message">Default Message</h4>
 			<!-- This message will regenerate every time a button is clicked -->
-		</section>
-		<section id="info">
-			<p>Click one of the buttons below to generate a random fact about that category.</p>
-		</section>
-		<section id="selector">
-			<!-- each button will generate a random fact of that category -->
-			<!-- Buttons given new class and icons added. -->
-			<button type="button" class="rounded-button" id="animals">
-				<ion-icon name="paw-outline"></ion-icon>
-				Animals
-			</button>
-			<button type="button" class="rounded-button" id="games">
-				<ion-icon name="game-controller-outline"></ion-icon>
-				Games
-			</button>
-			<button type="button" class="rounded-button" id="cars">
-				<ion-icon name="car-sport-outline"></ion-icon>
-				Cars
-			</button>
-			<button type="button" class="rounded-button" id="programming">
-				<ion-icon name="laptop-outline"></ion-icon>
-				Coding
-			</button>
-			<button type="button" class="rounded-button" id="random">
-				<ion-icon name="shuffle-outline"></ion-icon>
-				Random
-			</button>
+			<div class="hdr-box">
+				<p>Click one of the buttons below to generate a random fact about that category.</p>
+			</div>
+			<div class="message-box">
+				<h4 id="message">Default Message</h4>
+			</div>
+			<div>
+				<!-- each button will generate a random fact of that category -->
+				<!-- Buttons given new class and icons added. -->
+				<button type="button" class="rounded-button" id="animals">
+					<ion-icon name="paw-outline"></ion-icon>
+					Animals
+				</button>
+				<button type="button" class="rounded-button" id="games">
+					<ion-icon name="game-controller-outline"></ion-icon>
+					Games
+				</button>
+				<button type="button" class="rounded-button" id="cars">
+					<ion-icon name="car-sport-outline"></ion-icon>
+					Cars
+				</button>
+				<button type="button" class="rounded-button" id="programming">
+					<ion-icon name="laptop-outline"></ion-icon>
+					Coding
+				</button>
+				<button type="button" class="rounded-button" id="random">
+					<ion-icon name="shuffle-outline"></ion-icon>
+					Random
+				</button>
+			</div>
 		</section>
 		<!-- input new section here with a header for the section and a randomiser button. we can work on the inputs when were back together i think it comes up next on your course. making websites accessible module i think it is.-->
-		<section class="test">
-			<div id="holiday-info">
+		<section>
+			<div class="hdr-box">
 				<p>
 					Click the Button to get a random holiday suggestion from our generator.
 				</p>
-				<button id="holiday-button">
-					Holidays
-				</button>
 			</div>
-			<div id="message-container">
-				<p id="holiday-message">
-
-				</p>
+			<div class="message-box">
+				<h4 id="holiday-message"></h4>
+				<img alt="" />
+			</div>
+			<div>
+				<button id="holiday-button">Holidays</button>
 			</div>
 		</section>
-
 	</main>
 	<footer>
 		<div>
 			&copy; Chris & Callum
 		</div>
+		<!-- add our github links etc in anchors -->
 	</footer>
 </body>
 <!-- Adding Icons From ionicons -->

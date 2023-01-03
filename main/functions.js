@@ -81,14 +81,14 @@ const generateRandomMessage = (array) =>{
     }
 }
 // Event Listeners for click on buttons
-function click_event(button, array){
+function click_event(button, target , array){
     button.addEventListener("click", function(){
-        message.textContent = generateRandomMessage(array);
+        target.textContent = generateRandomMessage(array);
     });
 }
-click_event(animalsButton,animal)
-click_event(gamesButton,games)
-click_event(carsButton,cars)
-click_event(programmingButton,prog)
-click_event(randomButton,random);
+click_event(animalsButton, message, animal)
+click_event(gamesButton, message, games)
+click_event(carsButton, message, cars)
+click_event(programmingButton, message, prog)
+click_event(randomButton, message, random);
 
