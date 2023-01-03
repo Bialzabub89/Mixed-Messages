@@ -113,3 +113,11 @@ button:active{
 .test{
     flex-direction: column;
 }
+#message-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
+}
