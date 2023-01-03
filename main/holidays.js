@@ -1,3 +1,8 @@
+// const general = require('./functions') to look at later
+function grab_id(arg){
+    return document.getElementById(arg)
+};
+const holidayMessage = grab_id('holiday-message')
 // random number generator to select from arrays
 const randomInArray = (array) => {
     const ranNum = Math.floor(Math.random() * array.length)
@@ -27,9 +32,16 @@ const holidayTrip = {
         // user input modifictions will be made here.
     },
     readMessage(){
-        return (`Your next holiday will be ${this.activity} in ${this.destination}. You will be going with ${this.company} for a total of ${this.duration}`)
+        return `Your next holiday will be ${this.activity} in ${this.destination}. You will be going with ${this.company} for a total of ${this.duration}`
     }
-}
+};
+function click_event(button, object){
+    button.addEventListener("click", function(){
+        object.randomiseAll();
+        holidayMessage.textContent = readMessage(object);
+    });
+};
+click_event(holidayMessage, holidayTrip);
 // what im thinking is adding some inputs so people can choose length destination etc and it prints a message with a picture associated with the destination. Then add a randomise button incase they want a surprise.
 
 // we could also calculate made up prices using the destinations activites durations and company as a formula.

@@ -78,7 +78,7 @@ button{
     box-shadow: 2px 2px 0px
 }
 ion-icon{
-    font-size: 64px;
+    font-size: 128px;
 }
 button:active{
     box-shadow: 0 0 0;
@@ -87,4 +87,29 @@ button:active{
 }
 .rounded-button:hover {
     background: #00866c;
+}
+#holiday-info{
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: cadetblue;
+    background-color: white;
+    text-align: center;
+}
+#holiday-button{
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+    background-color: #055f23e3;
+}
+#holiday-button:hover{
+    background: #00866c;
+};
+#holiday-message{
+    color:black;
+}
+.test{
+    flex-direction: column;
 }
