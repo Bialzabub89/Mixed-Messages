@@ -38,7 +38,7 @@ const holidayTrip = {
 function click_event(button, object){
     button.addEventListener("click", function(){
         object.randomiseAll();
-        holidayMessage.textContent = readMessage(object);
+        object.textContent = object.readMessage();
     });
 };
 click_event(holidayMessage, holidayTrip);
